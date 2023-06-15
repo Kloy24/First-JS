@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!----------Changing HTML style------------->
+
+    <h3> Changing html style #1 </h3>
+    <p id="testing1"> html style #1 </p>
+
+    <script> 
+    document.getElementById("testing1").style.background= "green";
+    </script>
+
+<br> <br>
+
+    <h3> Changing html style #2 </h3>
+    <p id="testing2"> html style #2</p>
+    <script> 
+      document.getElementById("testing2").style.fontSize = "larger";
+      document.getElementById("testing2").style.color = "blue";
+      
+    </script>
+
+<br> <br>
+
+    <h3> Changing html style #3 </h3>
+    <p id="testing3"> html style #3  </p>
+
+    <script> 
+    document.getElementById("testing3").style.fontFamily = "Arial";
+    </script>
+
+<br> <br>
+<br> <br>
+<br> <br>
+
+
+<!----------Changing HTML style event------------->
+
+
+<h3> Changing html style event #1 </h3>
+
+
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+    Mouse Over Me</div>
+
+    <script>
+    function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+    function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me"
+    }
+    </script>
+
+<br> <br>
+
+<h3>Changing html style event #2</h3>
+<h4 onclick="changeText(this);">Click to change the text!</h4>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "TEXT HAS BEEN CHANGED!!!!";
+}
+</script>
+
+<br> <br>
+
+<h3>Changing html style event #3</h3>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn">Try it</button>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Hello World!");
+});
+</script>
+
+
+<br> <br>
+<br> <br>
+<br> <br>
+
+</body>
+</html>
+
